@@ -1,73 +1,129 @@
-# React + TypeScript + Vite
+# React + TypeScript Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, fast, and fully typed portfolio website built to demonstrate my skills as a **Software Engineering student**. The project emphasizes **clean structure, TypeScript usage, and modern frontend tooling**, making it suitable for internship and entry-level roles.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🎯 Purpose
 
-## React Compiler
+This portfolio was created to:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Showcase academic and personal projects
+- Practice building scalable React applications with TypeScript
+- Apply modern frontend tooling and best practices
+- Serve as a foundation for continuous improvement during internships
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ✨ Tech Stack
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **React 18** – Component-based UI development
+- **TypeScript** – Static typing for safety and maintainability
+- **Vite** – Fast development server and optimized build tool
+- **Tailwind CSS** – Utility-first styling using the Vite plugin
+- **React Router** – Client-side routing
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 📁 Project Structure
+
+```text
+src/
+ ├─ components/     # Reusable UI components
+ ├─ pages/          # Page-level components (Home, Projects, Contact)
+ ├─ assets/         # Images, icons, and static files
+ ├─ App.tsx         # Application routes and layout
+ ├─ main.tsx        # React entry point
+ └─ index.css       # Tailwind CSS import
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+The structure follows common industry conventions and is designed to scale as new features are added.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🚀 Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/saadmughlii/portfolio-website.git
+cd portfolio-website
 ```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Start the development server
+
+```bash
+npm run dev
+```
+
+The application will be available at the URL shown in the terminal (usually `http://localhost:5173`).
+
+---
+
+## 🎨 Styling (Tailwind CSS)
+
+Styling is implemented using **Tailwind CSS** via the official Vite plugin, enabling rapid UI development while maintaining consistency and responsiveness.
+
+```css
+@import "tailwindcss";
+```
+
+No PostCSS or Tailwind configuration file is required unless further customization is needed.
+
+---
+
+## 🧭 Routing
+
+Client-side routing is handled using **React Router**, allowing for clean navigation between pages without full page reloads.
+
+---
+
+## 📦 Build for Production
+
+```bash
+npm run build
+```
+
+An optimized production build will be generated in the `dist/` directory.
+
+---
+
+## 🌍 Deployment
+
+The project can be deployed using platforms such as:
+
+- **Netlify** (recommended)
+- **Vercel**
+- **GitHub Pages**
+
+Example Netlify settings:
+
+- **Build command:** `npm run build`
+- **Publish directory:** `dist`
+
+---
+
+## 🔮 Future Improvements
+
+- Dark mode support
+- Improved accessibility
+- Animations and transitions (Framer Motion)
+- Contact form integration
+- Additional project case studies
+
+---
+
+## 📄 License
+
+This project is open source and available under the **MIT License**.
+
+---
+
+**Author:** Saad Arshad Pervez Mughal
+Software Engineering Student
